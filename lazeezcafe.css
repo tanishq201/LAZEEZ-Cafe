@@ -1,0 +1,212 @@
+#new{
+	list-style: none;
+	word-spacing: 5px;
+	text-align: center;
+	background-color: yellow;
+	padding: 10px;
+
+}
+li{
+	display: inline;
+}
+*{
+	font-family: 'Chilanka', cursive;
+}
+.navbar-nav{
+	background-color: orange;
+	border-radius: 10px;
+	word-spacing: 50px;
+	padding-left: 40px;
+	;
+}
+.nav-item:hover{
+    background-color: red;
+}
+.style{
+	background-color: black;
+	color: white;
+	margin-left: 470px;
+	margin-right: 470px;
+	margin-top: 20px;
+	text-align: center;
+	text-decoration: underline;
+	padding: 10px;
+}
+.card-body{
+	background-color: black;
+	color: white;
+}
+.foot{
+	background-color: black;
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 20px;
+	text-decoration: underline;
+	
+}
+.foot:hover{
+	color: red;
+}
+.flip-box {
+  background-color: transparent;
+  width: 370px;
+  height: 400px;
+ 
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+#green {
+  background-color: black;
+  color: green;
+ border-radius: 20px;
+  transform: rotateY(180deg);
+}
+#red {
+  background-color: black;
+  color: red;
+ border-radius: 20px;
+  transform: rotateY(180deg);
+}
+.yellowcolor{
+	background-color: black;
+	color: yellow;
+}
+.redcolor{
+	background-color: black;
+	color: blue;
+}
+.card-img-top{
+	
+	border: 5px solid black;
+}
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+#fulll, #fullly {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#fulll {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=924&q=80"); }
+.img2 { background-image: url("https://images.unsplash.com/photo-1536305030588-45dc07a2a372?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"); }
+.img3 { background-image: url("https://images.unsplash.com/photo-1551881192-002e02ad3d87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"); }
+.img4 { background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Chicken_makhani.jpg"); }
+.img5 { background-image: url("https://images.unsplash.com/photo-1591031107640-45556bbac5f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=890&q=80"); }
+.img6 { background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/46/Kheer.jpg"); }
+
+/* Position text in the middle of the page/image */
+#full {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed; /* Stay fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+.blackwhite{
+	background-color: black;
+	color: white;
+}
+.margin{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#classy{
+	 background-image: url("https://images.unsplash.com/photo-1566188970068-b5693a96ae7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+ background-color: white;
+ color: white;
+ margin-top: 150px;
+ padding: 30px;
+ text-decoration: underline;
+ text-decoration-color: black;
+ text-decoration-style: solid;
+}
+.good{
+	background-image: url("https://image.flaticon.com/icons/svg/3190/3190463.svg");
+ color: black;
+ margin-top: 150px;
+ padding: 60px;
+ text-decoration: underline;
+ text-decoration-color: black;
+ text-decoration-style: solid;
+}
+.blackwhite{
+	background-color: black;
+	color: white;
+}
